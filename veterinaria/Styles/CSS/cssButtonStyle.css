@@ -1,0 +1,125 @@
+﻿/*EJEMPLO DE BOTONES CON DISEÑO*/
+
+aside:before, aside:after {
+  content: '';
+  position: absolute;
+  height: 0;
+  width: 0;
+  border-style: solid;
+  border-width: 0;
+}
+
+aside {
+  margin: 20px 0;
+  line-height: 34px;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+}
+
+aside:hover {
+  top: -1px;
+}
+
+aside:active {
+  top: 1px;
+}
+aside.diamond {
+  background-color: #8DDCA4;
+	width: 300px;
+	height: 100px;
+	text-align: center;
+	font-size: 4em;
+	line-height: 90px;
+	color: #fff;
+	margin: 0 auto;
+}
+
+aside.diamond:after, aside.diamond:before {
+  border-color: transparent #8DDCA4;
+}
+
+aside.diamond:before {
+  left: -50px;
+  border-width: 50px 50px 50px 0;
+}
+
+aside.diamond:after {
+  right: -50px;
+  border-width: 50px 0 50px 50px;
+}
+
+aside.arrow 
+{
+    background-color: #90C63D;
+	color: #fff;
+	font-size: 15px;
+	width: 100px;
+	height: 50px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+aside.arrow:after, aside.arrow:before {
+  border-width: 25px 0 25px 25px;
+}
+
+aside.arrow:before {
+  border-color: #90C63D transparent;
+  left: -25px;
+}
+
+aside.arrow:after {
+  border-color: transparent #90C63D;
+  right: -25px;
+}
+
+aside.ribbon {
+  background-color: #4D6C6D;
+  position: relative;
+	margin: 0 auto;
+	color: #fff;
+	font-size: 50px;
+	text-align: center;
+	width: 400px;
+	height: 80px;
+	line-height: 80px;
+}
+aside.ribbon:before, aside.ribbon:after {
+  top: 25px;
+  z-index: -10;
+}
+aside.ribbon:before {
+  border-color: #394D4F #394D4F #394D4F transparent;
+  left: -50px;
+  border-width: 35px;
+}
+aside.ribbon:after {
+  border-color: #394D4F transparent #394D4F #394D4F;
+  right: -50px;
+  border-width: 35px;
+}
+
+aside.sheer {
+  background-color: #85C9ED;
+  left: -5px;
+  width: 350px;
+	height: 80px;
+	font-size: 50px;
+	color: #fff;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 80px;
+}
+aside.sheer:after, aside.sheer:before {
+  border-width: 80px 10px 0 0;
+}
+aside.sheer:before {
+  left: -10px;
+  border-color: transparent #85C9ED;
+}
+aside.sheer:after {
+  right: -10px;
+  border-color: #85C9ED transparent;
+}
+

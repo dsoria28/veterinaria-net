@@ -1,0 +1,414 @@
+
+
+
+@font-face {
+	font-family: 'base';
+	src:url('fonts/base.eot?fqm3g');
+	src:url('fonts/base.eot?#iefixfqm3g') format('embedded-opentype'),
+		url('fonts/base.woff?fqm3g') format('woff'),
+		url('fonts/base.ttf?fqm3g') format('truetype'),
+		url('fonts/base.svg?fqm3g#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+ [class^="icon-"], span [class*=" icon-"] 
+{
+    font-weight: normal;
+    /*background-color: #06213F;*/
+    background: #06213F url("../Imagenes/icons/ui-bg_glass_45_06213F_1x400.png") 50% 50% repeat-x;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border: 1px solid #77d5f7;
+}
+
+/*Iconos modificados*/
+ [class^="iconM-"], span [class*=" iconM-"] 
+{
+    font-weight: normal;
+    /*background-color: #06213F;*/
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    
+}
+
+
+
+[class^="icon-"]:hover, [class*=" icon-"]:hover {
+	font-family: 'base';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	font-size:32px;
+    /*background-color:#92C63F;*/
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/*Modificados*/
+[class^="iconM-"]:hover, [class*=" iconM-"]:hover {
+	font-family: 'base';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	font-size:32px;
+    /*background-color:#92C63F;*/
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'base';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	color:#ffffff;
+	font-size:25px;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/*Modificados*/
+[class^="iconM-"], [class*=" iconM-"] {
+	font-family: 'base';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	font-size:25px;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-enter:before {
+	content: "\e600";
+}
+.icon-info:before {
+	content: "\e601";
+}
+.icon-idioma:before {
+	content: "\e602";
+}
+.icon-enviar:before {
+	content: "\e603";
+}
+.icon-cancelar:before {
+	content: "\e604";
+}
+.icon-aceptar:before {
+	content: "\e605";
+}
+.icon-guardar:before {
+	content: "\e606";
+}
+.icon-rechazar:before {
+	content: "\e607";
+}
+.icon-aprobar:before {
+	content: "\e608";
+}
+.icon-proceso:before {
+	content: "\e609";
+}
+.icon-auditoria:before {
+	content: "\e60a";
+}
+.icon-config:before {
+	content: "\e60b";
+}
+.icon-doc_rel:before {
+	content: "\e60c";
+}
+.icon-usuarios:before {
+	content: "\e60d";
+}
+.icon-reporte:before {
+	content: "\e60e";
+}
+.icon-lista_dist:before {
+	content: "\e60f";
+}
+.icon-ver:before {
+	content: "\e610";
+}
+.icon-editar:before {
+	content: "\e611";
+}
+.icon-eliminar:before {
+	content: "\e612";
+}
+.icon-boletin:before {
+	content: "\e613";
+}
+.icon-organigrama:before {
+	content: "\e614";
+}
+.icon-vista_prev:before {
+	content: "\e615";
+}
+.icon-descargar:before {
+	content: "\e616";
+}
+.icon-subir:before {
+	content: "\e617";
+}
+.icon-notificacion:before {
+	content: "\e618";
+}
+.icon-cambio_aprob:before {
+	content: "\e619";
+}
+.icon-carga_masiva:before {
+	content: "\e61a";
+}
+.icon-evidencia:before {
+	content: "\e61b";
+}
+.icon-control:before {
+	content: "\e61c";
+}
+.icon-riesgo:before {
+	content: "\e61d";
+}
+.icon-viaticos:before {
+	content: "\e61e";
+}
+.icon-compras:before {
+	content: "\e61f";
+}
+.icon-gastos_fijos:before {
+	content: "\e620";
+}
+.icon-caja_chica:before {
+	content: "\e621";
+}
+.icon-permisos:before {
+	content: "\e622";
+}
+.icon-roles:before {
+	content: "\e623";
+}
+.icon-perfil:before {
+	content: "\e624";
+}
+.icon-expediente:before {
+	content: "\e625";
+}
+.icon-pdf:before {
+	content: "\e626";
+}
+.icon-excel:before {
+	content: "\e627";
+}
+.icon-imagen:before {
+	content: "\e628";
+}
+.icon-zip:before {
+	content: "\e629";
+}
+.icon-word:before {
+	content: "\e62a";
+}
+.icon-ppt:before {
+	content: "\e62b";
+}
+.icon-xml:before {
+	content: "\e62c";
+}
+.icon-agregar:before {
+	content: "\e62d";
+}
+.icon-nuevo:before {
+	content: "\e62e";
+}
+.icon-pendientes:before {
+	content: "\e62f";
+}
+.icon-sol_aprob:before {
+	content: "\e630";
+}
+.icon-sol_enviada:before {
+	content: "\e631";
+}
+.icon-sol_recibida:before {
+	content: "\e632";
+}
+.icon-cer_origen:before {
+	content: "\e633";
+}
+.icon-historial:before {
+	content: "\e634";
+}
+.icon-cerrar_sesion:before {
+	content: "\e635";
+}
+.icon-cerrar:before {
+	content: "\e636";
+}
+.icon-warning:before {
+	content: "\e637";
+}
+
+.iconM-warning:before {
+	content: "\e637";
+}
+
+.icon-exito:before {
+	content: "\e638";
+}
+.icon-error:before {
+	content: "\e639";
+}
+.icon-informacion:before {
+	content: "\e63a";
+}
+.icon-usuario:before {
+	content: "\e63b";
+}
+.icon-carpeta:before {
+	content: "\e63c";
+}
+.icon-actualizar:before {
+	content: "\e63d";
+}
+.icon-validar:before {
+	content: "\e63e";
+}
+.icon-pagar:before {
+	content: "\e63f";
+}
+.icon-comprobar:before {
+	content: "\e640";
+}
+.icon-semaforo_ver:before {
+	content: "\e641";
+}
+.icon-semaforo_am:before {
+	content: "\e642";
+}
+.icon-semaforo_blanco:before {
+	content: "\e643";
+}
+.icon-semaforo_rojo:before {
+	content: "\e644";
+}
+.icon-scorecard:before {
+	content: "\e645";
+}
+.icon-orden_compra:before {
+	content: "\e646";
+}
+.icon-lider_proyecto:before {
+	content: "\e647";
+}
+.icon-categoria:before {
+	content: "\e648";
+}
+.icon-tratado:before {
+	content: "\e649";
+}
+.icon-catalogo:before {
+	content: "\e64a";
+}
+.icon-capacitacion:before {
+	content: "\e64b";
+}
+.icon-incidencia:before {
+	content: "\e64c";
+}
+.icon-home:before {
+	content: "\e64d";
+}
+.icon-buscar:before {
+	content: "\e64e";
+}
+.icon-datatage:before {
+	content: "\e64f";
+}
+.icon-edocument:before {
+	content: "\e650";
+}
+.icon-guardar_doc:before {
+	content: "\e651";
+}
+.icon-imprimir:before {
+	content: "\e652";
+}
+.icon-propuesta_servicio:before {
+	content: "\e653";
+}
+.icon-plan_pago:before {
+	content: "\e654";
+}
+.icon-plan_ejecucion:before {
+	content: "\e655";
+}
+.icon-informe_final:before {
+	content: "\e656";
+}
+.icon-encuesta:before {
+	content: "\e657";
+}
+.icon-facturacion_pago:before {
+	content: "\e658";
+}
+.icon-cierre_folio:before {
+	content: "\e659";
+}
+.icon-dato_fiscal:before {
+	content: "\e65a";
+}
+.icon-pago_confirmado:before {
+	content: "\e65b";
+}
+.icon-pago_por_conf:before {
+	content: "\e65c";
+}
+.icon-activo_fijo:before {
+	content: "\e65d";
+}
+.icon-computadora:before {
+	content: "\e65e";
+}
+.icon-marca:before {
+	content: "\e65f";
+}
+.icon-modelo:before {
+	content: "\e660";
+}
+.icon-proveedor:before {
+	content: "\e661";
+}
+.icon-asignacion_compu:before {
+	content: "\e662";
+}
+.icon-ticket:before {
+	content: "\e663";
+}
+.icon-licencia:before {
+	content: "\e664";
+}
+.icon-empleado:before {
+	content: "\e665";
+}

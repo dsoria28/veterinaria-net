@@ -1,0 +1,62 @@
+﻿.wizard {
+    margin-top:-60px;
+    /*background: #fff; e0e0e0*/
+}
+
+.wizard > div.wizard-inner 
+{
+    position: relative;
+}
+
+.wizard .nav-tabs > li.active > a, .wizard .nav-tabs > li.active > a:hover, .wizard .nav-tabs > li.active > a:focus {
+    color: #555555;
+    cursor: default;
+}
+
+span.round-tab {
+    width: 36px;
+    height: 36px;
+    line-height: 70px;
+    display: inline-block;
+    border-radius: 100px;
+    background: #fff;
+    border: 2px solid #a8a7a7;
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    text-align: center;
+    font-size: 15px;
+}
+
+span.round-tab i{
+    color:#555555;
+}
+.wizard li.active span.round-tab {
+    background: #fff;
+    border: 2px solid #90C63D;
+    
+}
+.wizard li.active span.round-tab i{
+    color: #90C63D;
+}
+
+.wizard .nav-tabs > li a {
+    width: 36px;
+    height: 36px;
+    margin: 20px auto;
+    border-radius: 100%;
+    padding: 0;
+}
+
+.wizard .nav-tabs > li a:hover {
+    background: transparent;
+}
+
+.wizard .tab-pane {
+    position: relative;
+    padding-top: 10px;
+}
+
+.wizard h3 {
+    margin-top: 0;
+}

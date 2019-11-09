@@ -1,0 +1,66 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="plantilla_previo_fotos.master.cs" Inherits="Vista_Diseno_plantilla_previo_fotos" %>
+<%@ Register Src="~/Vista/Diseno/header_prev.ascx" TagName="encabezado" TagPrefix="enc" %>
+<%@ Register Src="~/Vista/Diseno/footer_prev.ascx" TagName="footer" TagPrefix="fot" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Sistema de Operaciones</title>
+
+    <link href="../../Styles/Bootsrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="../../Styles/Previo/style_Previo.css" rel="stylesheet" type="text/css" />
+    <link href="../../Styles/Bootsrap/FontAwesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="../../Styles/CSS/cssEstilosVarios.css" rel="stylesheet" />
+    <link href="../../Styles/Previo/style_Breadcrumbs.css" rel="stylesheet" type="text/css" />
+    <script src="../../Scripts/js/jquery-1.10.2.js" type="text/javascript"></script>
+    <script src="../../Scripts/js/jquery-ui-1.10.4.custom.min.js" type="text/javascript"></script>
+    <script src="../../Styles/Bootsrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="../../Scripts/jsplugin/notify-master/bootstrap-notify.min.js" type="text/javascript"></script>
+    <script src="../../Scripts/jsplugin/jsblockUI.js" type="text/javascript"></script>
+    <script src="../../Scripts/jsplugin/jsNotificaciones.js" type="text/javascript"></script>
+    <script src="../../Scripts/js/jsToUpperCase.js" type="text/javascript"></script>
+    <asp:ContentPlaceHolder id="head_page" runat="server">
+    
+    </asp:ContentPlaceHolder>
+
+</head>
+<body>
+    
+    <!---////INICIO FORM---->
+    <form id="form1" runat="server">
+        <!--///HEADER------->
+        <enc:encabezado runat="server" ID="header_" />
+        <!--///HEADER------->
+
+        <!---///CONTENIDO --->
+        <div class="content">
+		    <div class="container content_prev shadow">
+                <!---///
+                <div class="row">
+                    <div class="btn-group btn-breadcrumb">
+                        <a href="#" class="btn btn-default"><i class="glyphicon glyphicon-home"></i></a>
+                        <a href="#" class="btn btn-default">Snippets</a>
+                        <a href="#" class="btn btn-default">Breadcrumbs</a>
+                        <a href="#" class="btn btn-default">Default</a>
+                    </div>
+	            </div>
+                -->
+                    
+                <asp:ContentPlaceHolder id="content_page" runat="server" ClientIDMode="Static">
+                    
+                </asp:ContentPlaceHolder>
+
+            </div>
+        </div>
+        <!---///FIN COTENIDO--->
+        
+        <!--///FOOTER---->
+        <fot:footer runat="server" ID="footer_" />
+        <!--///FOOTER---->
+
+    </form>
+    <!---////FIN FORM------->
+</body>
+</html>

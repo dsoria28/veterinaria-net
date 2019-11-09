@@ -1,0 +1,92 @@
+﻿
+
+/*ESTILOS PARA WIZARD DE BAM*/
+.steps {list-style-type: none;padding: 0;}
+
+.steps li {display: inline-block;margin-bottom: 3px;}
+
+.steps li a, .steps li p {
+    background: #e5f4fd;
+    /*padding: 8px 20px;*/
+    padding: 8px 20px;
+    color: #0077bf;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+    /*text-indent: 12px;*/
+    text-indent: 6px;
+    -webkit-box-shadow: 2px 6px 7px -3px #606060;
+    -moz-box-shadow: 2px 6px 7px -3px #606060;
+    box-shadow: 2px 6px 7px -3px #606060;
+}
+
+.steps li a .number {
+    float: left;
+    font-size: 10px;
+    text-align: center;
+    border: 1px solid;
+    -webkit-border-radius: 11px;
+    -moz-border-radius: 11px;
+    border-radius: 11px;
+    padding-left: -2px;
+    padding-right: -1px;
+    padding: -1px -1px 0px 3px;
+    padding: 4px 4px -2px;
+    margin: 2px 0px 1px 1px;
+    padding: 0px 5px 0px 0px;
+    padding-left: -2px;
+    padding-right: -2px;
+    background-color: #FFF;
+    border-color: #ccc;
+}
+
+.steps li a:hover, .steps li p:hover { text-decoration: none;}
+
+.steps li a:before, .steps li p:before {
+    border-bottom: 18px solid transparent;
+    border-left: 12px solid #fff;
+    border-top: 18px solid transparent;
+    content: "";
+    height: 0;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 0;
+    margin-top: -18px;
+}
+
+.steps li a:after, .steps li p:after {
+    border-bottom: 18px solid transparent;
+    border-left: 12px solid #e5f4fd;
+    border-top: 18px solid transparent;
+    content: "";
+    height: 0;
+    position: absolute;
+    right: -12px;
+    top: 50%;
+    width: 0;
+    margin-top: -18px;
+    z-index: 1;
+}
+
+/*ACTIVE*/
+.steps li.active a, .steps li.active p {background: #e5f4fd;color: #0077bf;}
+.steps li.active a:after, .steps li.active p:after {border-left: 12px solid #e5f4fd;}
+
+/*UNDONE*/
+.steps li.undone a, .steps li.undone p {color: #0077bf;background: #E7EAE5;}
+.steps li.undone a:after, .steps li.undone p:after {border-left: 12px solid #E7EAE5;}
+.steps li.undone p {color: #aaa;}
+
+/*DONE*/
+.steps li.done a, .steps li.done p {background: #90C63D;color: #F8FAF6;}
+.steps li.done a:after, .steps li.done p:after {border-left: 12px solid #90C63D;}
+.steps li.done p {color: #FFF;}
+.steps li.done .number {color: #333;}
+
+/*TO DO*/
+.steps li.todo a, .steps li.todo p {background: #E7E303;color: #0077bf;}
+.steps li.todo a:after, .steps li.todo p:after {border-left: 12px solid #E7E303;}
+.steps li.todo p {color: #aaa;}
+

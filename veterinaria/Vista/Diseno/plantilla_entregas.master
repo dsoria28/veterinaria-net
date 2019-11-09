@@ -1,0 +1,63 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="plantilla_entregas.master.cs" Inherits="Vista_Diseno_plantilla_entregas" %>
+<%@ Register Src="~/Vista/Diseno/header_entregas.ascx" TagName="encabezado" TagPrefix="enc" %>
+<%@ Register Src="~/Vista/Diseno/Footer.ascx" TagName="footer" TagPrefix="foot" %>
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    
+    <title>Sistemas de Operaciones</title>
+
+     <link href="../../Styles/Bootsrap/FontAwesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="../../Styles/Bootsrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="../../Styles/SOP/stylesSOP.css" rel="stylesheet" type="text/css" />
+    <link href="../../Styles/CSS/animate.min.css" rel="stylesheet" type="text/css" />
+    <link href="../../Styles/CSS/css_Loader.css" rel="stylesheet" />
+    <script src="../../Scripts/js/jquery-1.10.2.js" type="text/javascript"></script>
+    <script src="../../Scripts/js/jquery-ui-1.10.4.custom.min.js" type="text/javascript"></script>
+    <script src="../../Styles/Bootsrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="../../Scripts/jsplugin/notify-master/bootstrap-notify.min.js" type="text/javascript"></script>
+    <script src="../../Scripts/jsplugin/jsblockUI.js" type="text/javascript"></script>
+    <script src="../../Scripts/jsplugin/jsNotificaciones.js" type="text/javascript"></script>
+    <script src="../../Scripts/js/jquery.validate.min.js" type="text/javascript"></script>
+    <script src="../../Scripts/Utilerias/js_notificaciones.js" type="text/javascript"></script>
+    <script src="../../Scripts/js/jsToUpperCase.js" type="text/javascript"></script>
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+
+
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    
+        <!---- header ---->
+        <enc:encabezado ID="header" runat="server" /> 
+        <!---- Termina Header ---->
+
+
+        <div class="container-fluid">
+            <div class="row content_gen shadow">
+                <asp:ContentPlaceHolder id="contend" runat="server" ClientIDMode="Static" >
+                <!---------------------------------------------------------CONTENIDO-------------------------------------------------->
+                
+                <!-----------------------------------------------------FIN CONTENIDO--------------------------------------------------->
+                </asp:ContentPlaceHolder>                
+            </div>
+        </div>
+
+
+
+        <!---- Footer ---->
+        <foot:footer ID="footer" runat="server" /> 
+        <!---- Termina Footer ----->
+    
+    </form>
+
+
+
+<!--***********************************************************************************************************-->
+
+</body>
+</html>

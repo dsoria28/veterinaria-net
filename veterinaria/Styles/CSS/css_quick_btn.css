@@ -1,0 +1,47 @@
+﻿        .quick-btn
+        {
+            position: relative;
+            display: inline-table;
+            width: 105px;
+            height: 85px;
+            padding-top: 16px;
+            margin: 10px;
+            color: #1d6688; 
+            text-align: center;
+            text-decoration: none;
+            text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
+            -webkit-box-shadow: 0 0 0 1px #F8F8F8 inset, 0 0 0 1px #CCCCCC;
+            box-shadow: 0 0 0 1px #F8F8F8 inset, 0 0 0 2px #8D8585;
+            /*border:2px solid;*/
+            border-radius:5px;
+        }
+        .quick-btn .label
+        {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+        }
+        
+        .quick-btn .glyphicon
+        {
+            font-size: 25px;
+        }
+        
+        .quick-btn .fa
+        {
+            font-size: 28px;
+        }
+        .btn-metis-4
+        {
+            color: #ffffff;
+            background-color: #a264e7;
+            border-color: #62309a;
+        }
+        a:hover, a:visited, a:link, a:active
+        {
+            text-decoration: none;
+        }
+        a:hover
+        {
+            color: #85c555;
+        }

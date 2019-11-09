@@ -1,0 +1,167 @@
+﻿@import 'headSOP.css';
+@import 'footerSOP.css';
+@import 'contentSOP.css';
+
+@font-face {
+    font-family: 'proxima_novalight';
+    src: url('../SOP/fonts/proximanovalight-webfont.eot');
+    src: url('../SOP/fonts/proximanovalight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../SOP/fonts/proximanovalight-webfont.woff2') format('woff2'),
+         url('../SOP/fonts/proximanovalight-webfont.woff') format('woff'),
+         url('../SOP/fonts/proximanovalight-webfont.ttf') format('truetype'),
+         url('../SOP/fonts/proximanovalight-webfont.svg#proxima_novalight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body input,textarea{
+    text-transform:uppercase;
+}
+
+/*--- sombreado para objetos ---*/
+.shadow{-webkit-box-shadow: 1px 2px 5px #606060;-moz-box-shadow: 1px 2px 5px  #606060;box-shadow: 1px 2px 5px #606060;}
+.shadow2{-webkit-box-shadow: 1px 4px 1px #858585;-moz-box-shadow: 1px 4px 3px  #858585;box-shadow: 1px 4px 1px #858585;}
+.shadow3{-webkit-box-shadow:0px 10px 20px 0px #c2c2c2;-moz-box-shadow:0px 10px 20px 0px  #c2c2c2;box-shadow:0px 10px 20px 0px #c2c2c2;}
+
+/*////// COLORES ICONOS*/
+.icon_green{color: #90C63D;}
+.icon_yellow{color:#EEEE0A;}
+.icon_red{color:#AE1A00;}
+.icon_blue{color: #1d6688;}
+.icon_info { color: #5bc0de; }
+/*//ICONOS HOVER//*/
+.icon_green:hover{color: #FFFFFF;}
+.icon_blue:hover{color: #FFFFFF;}
+.icon_info:hover { color: #FFFFFF; }
+
+/*///////BOTONES*/
+/*--Boton verde*/
+.btn-greenS{color: #fff;background-color: #90C63D;border-color: #ADE15F;}
+/*--Boton verder hover*/
+.btn-greenS:hover {color: #fff;background-color: #7BCA04;border-color: #8BE405;}
+.btn_gray
+{
+    border-radius:5px;
+    background-color: #F5F5F5;
+    color: #878a8c;
+    }
+    
+.btn_gray:hover {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+
+/*/////ESTILO ALERTAs*/
+/*---Alerta Success*/
+.alert-success {color: #FFF;background-color: #000;border-color: #80C44C;opacity:0.8;}
+/*---Alerta Warning*/
+.alert-warning {color: #FFF;background-color: #000;border-color: #EEEE0A;opacity:0.8;}
+/*---Alerta Error*/
+.alert-danger {color: #FFF;background-color: #000;border-color: #AE1A00;opacity:0.8;}
+/*---Alerta boton cerrar*/
+.close {float: right;font-size: 21px;font-weight: 700;line-height: 1;color: #FFFFFF;}
+
+/*///ESTILO PARA MODALS*/
+.content_modal
+{
+    background: #1b6079;
+    background: -moz-linear-gradient(top, #1b6079 0%, #2282a5 50%, #1b6079 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #1b6079), color-stop(50%, #2282a5), color-stop(100%, #1b6079));
+    background: -webkit-linear-gradient(top, #1b6079 0%, #2282a5 50%, #1b6079 100%);
+    background: -o-linear-gradient(top, #1b6079 0%, #2282a5 50%, #1b6079 100%);
+    background: -ms-linear-gradient(top, #1b6079 0%, #2282a5 50%, #1b6079 100%);
+    background: linear-gradient(to bottom, #1b6079 0%, #2282a5 50%, #1b6079 100%);   
+    color:#FFF;
+    
+}
+
+
+ /*/////TAMAÑO DE LETRA PARA CONTENIDO DE CUERPO DE TABLA*/
+.dataTables_wrapper tbody{font-size:11px;}
+/*/////ESTILO PARA HEADER DEL DATATABLE*/
+.dataTables_wrapper thead th{
+    background: #195b72;
+    background: -moz-linear-gradient(top, #195b72, #2181a3);
+    background: linear-gradient(to bottom, #195b72, #2181a3);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#195b72), to(#2181a3));
+    color: #FFF;
+    font-size: 0.7em;
+    text-align: center;
+}
+/*//////HOVER PARA COLORES DE ICONOS*/
+.table-hover>tbody>tr:hover {
+    background-color: #85c555;
+    color: #FFF;
+}
+/*//////ESTILO PARA FOOTER DE DATATABLE*/    
+.dataTables_wrapper tfoot td{
+    background: #195b72;
+    background: -moz-linear-gradient(top, #195b72, #2181a3);
+    background: linear-gradient(to bottom, #195b72, #2181a3);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#195b72), to(#2181a3));
+    color: #FFF;
+    font-size: 0.5em;
+    text-align: center;
+}
+/*//////TAMAÑO DE CAJA DE TEXTO DE FOOTER PARA BUSCADORES*/    
+.dataTables_wrapper input[type=text]{height:22px;}
+/*//////ESTILO PARA CANTIDAD DE DE REGISTROS A MOSTRAR*/    
+.dataTables_length    {
+    background-image: linear-gradient(left, #195B72,#e6e8eb);
+    background-image: -webkit-linear-gradient(left,#195B72, #e6e8eb);
+    background-image: -moz-linear-gradient(left, #195B72, #e6e8eb);
+    background-image: -o-linear-gradient(left,#195B72, #e6e8eb);
+    background-image: -ms-linear-gradient(left, #195B72, #e6e8eb);
+    height: 26px;
+    padding: 3px 3px;
+}
+/*/////OCULTA BUSCADOR GENERAL*/
+div.dataTables_wrapper div.dataTables_filter {display: none;}
+/*/////COLOR DE LETRA DE LABEL EN CANTIDAD DE REGISTROS A MOSTRAR*/    
+.dataTables_length,.dataTables_filter label{ color:#FFF;}
+/*/////COLOR DE LETRA DE SELECT EN CANTIDAD DE REGISTROS A MOSTRAR*/    
+.dataTables_length select{ color:#000;    height: 19px;}
+
+.dataTables_length select
+        {
+            padding: 0px 15px;
+            }
+/*/////ESTILO PARA BUSCADOR GENERAL DE DATATABLE*/
+.dataTables_filter{
+    background-image: linear-gradient(left, #e6e8eb,#195B72);
+    background-image: -webkit-linear-gradient(left,#e6e8eb,#195B72);
+    background-image: -moz-linear-gradient(left, #e6e8eb,#195B72);
+    background-image: -o-linear-gradient(left,#e6e8eb,#195B72);
+    background-image: -ms-linear-gradient(left, #e6e8eb,#195B72);
+}
+/*//////TAMAÑO DE CAJA DE TEXTO DE BUSCADOR GENERAL*/    
+.dataTables_filter search{height:20px;}
+/*/////TAMAÑO DE LETRA PARA PAGINACION*/
+.dataTables_paginate{ font-size:12px;}
+/*/////ESTILO PARA INFO DE DATOS DATATBLE*/
+.dataTables_info{-webkit-box-shadow: -2px 1px 0px #858585;-moz-box-shadow: -2px 1px 0px #858585;box-shadow: -2px 1px 0px #858585;}
+/*/////HOVER DE DATATABLE*/
+.table-hover tbody tr:hover{background-color: #85c555;color:#FFF;}
+
+.table-hover tr:hover .glyphicon {color: #FFF;}
+
+/*////TAMAÑO DE ENCABEZADO Y FOOTER*/
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {padding: 6px;}
+/*//////ESTILO DE PROCESSING/////*/
+.dataTables_wrapper .dataTables_processing {
+    display:none;
+    z-index: 1000;
+    border: medium none;
+    margin: -100px;
+    padding: 100px;
+    width: 100%;
+    height: 20%;
+    top: -100px;
+    left: 1000px;
+    background-color: #000;
+    opacity: 0.6;
+    cursor: wait;
+    position: fixed;
+    color:#FFF;
+}

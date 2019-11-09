@@ -1,0 +1,334 @@
+﻿/* Main tabs */
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700);
+
+.board {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background: none;
+}
+
+.board .nav-tabs {
+    position: relative;
+    margin: 0px auto;
+    margin-bottom: 0;
+    box-sizing: border-box;
+}
+
+/*.wizard-header {
+  padding: 15px 15px 15px 15px;
+  position: relative;
+  border-radius: 3px 3px 0 0;
+  z-index: 3;
+}*/
+
+.liner {
+    height: 2px;
+    background: #cecece;
+    position: absolute;
+    width: 99%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 50%;
+    z-index: 1;
+}
+
+/*.nav-tabs > li {
+    width: 12.5%;
+}*/
+
+.nav-tabs
+{
+    border-bottom: none !important;
+}
+
+.nav-tabs > li:after {
+    content: " ";
+    position: absolute;
+    opacity: 0;
+    margin: 0;
+    margin-left: -10px;
+    bottom: 0px;
+    border: 10px solid transparent;
+    /*border-bottom-color: #aaa;*/
+    transition: left 1s;
+}
+
+.nav-tabs > li.active:after {
+    left: 50%;
+    opacity: 1;
+}
+
+.nav-tabs > li.active:after span {
+    left: 50%;
+    opacity: 1;
+    background:red;
+}
+
+.nav-tabs > li[rel-index="-1"]:after {
+    left: calc(50% + 100%);
+}
+
+.nav-tabs > li[rel-index="-2"]:after {
+    left: calc(50% + 200%);
+}
+
+.nav-tabs > li[rel-index="-3"]:after {
+    left: calc(50% + 300%);
+}
+
+.nav-tabs > li[rel-index="1"]:after {
+    left: calc(50% - 100% );
+}
+
+.nav-tabs > li[rel-index="2"]:after {
+    left: calc(50% - 200%);
+}
+
+.nav-tabs > li[rel-index="3"]:after {
+    left: calc(50% - 300%);
+}
+
+.nav-tabs > li a {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    margin: 20px auto;
+    border-radius: 100%;
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+.nav-tabs > li a:hover {
+    border: none;
+    background: none;
+}
+
+.nav-tabs > li.active a, .nav-tabs > li.active a:hover {
+    border: none;
+    background: none;
+}
+
+.nav-tabs > li span i {
+    padding-top: 19px;
+}
+
+.nav-tabs > li span {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    display: inline-block;
+    border-radius: 100%;
+    background: white;
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    text-align: center;
+    font-size: 18px;
+}
+
+.nav-tabs > li:nth-of-type(1) span {
+    color: #878a8c;
+    border: 2px solid #cecece;
+}
+
+.nav-tabs > li:nth-of-type(1).active span {
+    color: #878a8c;
+    background: #FFF;
+}
+
+.nav-tabs > li:nth-of-type(2) span {
+    color: #878a8c;
+    border: 2px solid #cecece;
+}
+
+.nav-tabs > li:nth-of-type(2).active span {
+    color: #878a8c;
+    background: #FFF;
+}
+
+.nav-tabs > li:nth-of-type(3) span {
+    color: #878a8c;
+    border: 2px solid #cecece;
+}
+
+.nav-tabs > li:nth-of-type(3).active span {
+    color: #878a8c;
+    background: #FFF;
+}
+
+.nav-tabs > li:nth-of-type(4) span {
+    color: #878a8c;
+    border: 2px solid #cecece;
+}
+
+.nav-tabs > li:nth-of-type(4).active span {
+    color: #878a8c;
+    background: #FFF;
+}
+
+.nav-tabs > li:nth-of-type(5) span {
+    color: #878a8c;
+    border: 2px solid #cecece;
+}
+
+.nav-tabs > li:nth-of-type(5).active span {
+    color: #878a8c;
+    background: #FFF;
+}
+
+.nav-tabs > li:nth-of-type(6) span {
+    color: #878a8c;
+    border: 2px solid #cecece;
+}
+
+.nav-tabs > li:nth-of-type(6).active span {
+    color: #878a8c;
+    background: #FFF;
+}
+
+.nav-tabs > li:nth-of-type(7) span {
+    color: #878a8c;
+    border: 2px solid #cecece;
+}
+
+.nav-tabs > li:nth-of-type(7).active span {
+    color: #878a8c;
+    background: #FFF;
+}
+
+.nav-tabs > li:nth-of-type(8) span {
+    color: #878a8c;
+    border: 2px solid #cecece;
+}
+
+.nav-tabs > li:nth-of-type(8).active span {
+    color: #878a8c;
+    background: #FFF;
+}
+
+.nav-tabs > li > a.disabled {
+    opacity: 1;
+}
+
+.nav-tabs > li > a.disabled span {
+    border-color: #ddd;
+    color: #aaa;
+}
+
+div[role="tabpanel"]:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/*.wizard-card[data-color="azure"] .nav-pills > li.active > a:after {
+  background-color: #7A9E9F;
+}* /
+
+/*.nav-tabs > li > a.tooltip:hover span, .nav-tabs > li > a.tooltip:focus span {
+    display:block;
+    position:absolute;
+    top:1em;
+    left:1.5em;
+    padding: 0.2em 0.6em;
+    border:1px solid #996633;
+    background-color:#FFFF66;
+    color:red;
+}*/
+
+@media ( max-width : 885px ) {
+
+    .board {
+        width: 100%;
+        height: auto !important;
+        padding-top:5px;
+    }
+
+    .nav-tabs > li a {
+        font-size: 15px;
+        width: 40px !important;
+        height: 40px !important;
+        line-height: 35px;
+    }
+
+    .board .nav-tabs > li a {
+        width: 40px !important;
+        height: 40px !important;
+        line-height: 35px;
+    }
+
+    .nav-tabs > li span i {
+        padding-top: 10px;
+    }
+
+    .nav-tabs > li span {
+        width: 40px !important;
+        height: 40px !important;
+        line-height: 35px !important;
+        display: inline-block;
+        border-radius: 100%;
+        background: white;
+        z-index: 2;
+        position: absolute;
+        left: 0;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .board li.active:after {
+        content: "";
+        position: absolute;
+        left: 30%;
+    }
+}
+
+/* Begin Business Info */
+
+@media ( max-width : 585px ) {
+
+    .board {
+        width: 100%;
+        height: auto !important;
+        padding-top:5px;
+    }
+
+    .nav-tabs > li a {
+        font-size: 15px;
+        width: 32px !important;
+        height: 32px !important;
+        line-height: 32px;
+    }
+
+    .board .nav-tabs > li a {
+        width: 32px !important;
+        height: 32px !important;
+        line-height: 32px;
+    }
+
+    .nav-tabs > li span i {
+        padding-top: 8px;
+    }
+
+    .nav-tabs > li span {
+        width: 32px !important;
+        height: 32px !important;
+        line-height: 32px !important;
+        display: inline-block;
+        border-radius: 100%;
+        background: white;
+        z-index: 2;
+        position: absolute;
+        left: 0;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .board li.active:after {
+        content: "";
+        position: absolute;
+        left: 30%;
+    }
+}
